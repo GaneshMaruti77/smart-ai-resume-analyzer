@@ -10,7 +10,7 @@ import type { Route } from "./+types/upload";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Resumind | Upload Resume" },
+    { title: "Brook | Upload Resume" },
     { name: "description", content: "Upload your resume to get feedback" },
   ];
 }

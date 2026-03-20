@@ -5,7 +5,7 @@ import type { Route } from "./+types/auth";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Resumind | Authentication" },
+    { title: "Brook | Authentication" },
     { name: "description", content: "Log in to your account" },
   ];
 }
