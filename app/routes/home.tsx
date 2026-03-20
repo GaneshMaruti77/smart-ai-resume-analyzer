@@ -75,6 +75,28 @@ export default function Home() {
           </div>
         )}
       </section>
+      <footer className="footer text-gray-400 hover:text-purple-400 transition duration-300">
+        <div className="flex flex-col items-center gap-3">
+           <h2 className="text-lg font-semibold bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
+             Smart AI Resume Analyzer 🚀
+            </h2>
+      <h3 className="text-gray-400 text-sm hover:text-purple-400 transition duration-300">
+        made with passion 🔥 by k0, L4, L7, M8 and N5 🔥
+      </h3>
+      <div className="flex gap-4 mt-2">
+      <a 
+        href="https://github.com/GaneshMaruti77" 
+        target="_blank"
+        className="text-gray-400 hover:text-white transition"
+      >
+        GitHub
+      </a>
+      </div>
+      </div>
+    </footer>
     </main>
+    
   );
-}
+  }
+  
+

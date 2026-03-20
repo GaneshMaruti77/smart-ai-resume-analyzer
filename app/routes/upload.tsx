@@ -130,18 +130,18 @@ const UploadPage = () => {
   };
 
   return (
-    <main className="bg-[url('/images/bg-main.svg')] bg-cover">
+    <main className="bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white min-h-screen">
       <Navbar />
       <section className="main-section">
         <div className="page-heading">
-          <h1>Smart feedback for your dream job</h1>
+          <h1 className = "text-4xl font-bold text-center bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">Smart Resume Analyzer by team ali</h1>
           {isProcessing ? (
             <>
               <h2>{statusText}</h2>
               <img src="/images/resume-scan.gif" className="w-full" />
             </>
           ) : (
-            <h2>Drop your resume for an ATS score and improvement tips.</h2>
+            <h2 className = "text-2xl font-semibold text-center">Upload your resume for quick analysis</h2>
           )}
           {!isProcessing && (
             <form
@@ -151,7 +151,7 @@ const UploadPage = () => {
             >
               <div className="form-div">
                 <label htmlFor="company-name">Company Name</label>
-                <input
+                <input className="bg-gray-800 border border-gray-600 rounded-lg p-2 text-black placeholder-gray-400"
                   type="text"
                   name="company-name"
                   placeholder="Company Name"
@@ -161,7 +161,7 @@ const UploadPage = () => {
 
               <div className="form-div">
                 <label htmlFor="job-title">Job Title</label>
-                <input
+                <input className ="bg-gray-800 border border-gray-600 rounded-lg p-2 text-black placeholder-gray-400"
                   type="text"
                   name="job-title"
                   placeholder="Job Title"
@@ -171,7 +171,7 @@ const UploadPage = () => {
 
               <div className="form-div">
                 <label htmlFor="job-description">Job Description</label>
-                <textarea
+                <textarea className="bg-gray-800 border border-gray-600 rounded-lg p-2 text-black"
                   name="job-description"
                   id="job-description"
                   placeholder="Job Description"
@@ -186,13 +186,16 @@ const UploadPage = () => {
 
               {file && (
                 <button className="primary-button" type="submit">
-                  Save & Analyze Resume
+                  Analyze😊
                 </button>
               )}
             </form>
           )}
         </div>
       </section>
+      <p className="text-center mt-10 text-sm text-gray-400">
+  Built by pure passion and team work🚀
+</p>
     </main>
   );
 };
